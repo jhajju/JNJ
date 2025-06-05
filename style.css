@@ -1,0 +1,98 @@
+body{
+    background-color: #0A1018
+}
+.home-jumbotron {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 500px; /* Adjust the height to make it larger */
+}
+.jumbotron {
+    background-image: url('header.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white; 
+    height: 150px;
+}
+.homediv {
+    border-color: rgb(218, 169, 218); 
+    color: rgb(218, 169, 218); 
+}
+.homecard:hover {
+    transform: scale(1.05);
+    transition: transform 0.9 ease;
+}
+.card {
+    background-color: #352A43;
+    color: white;
+}
+.rounded-table {
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-lg .page-item .page-link {
+    background-color: #343a40; 
+    border-color: #343a40; 
+    color: white;
+}
+
+.pagination-lg .page-item.active .page-link {
+    background-color: #3c5b99; 
+    border-color: #3c5b99; 
+}
+.contactform {
+    background-color: #233559; 
+    padding: 20px; 
+    color: white; 
+    max-width: 600px; 
+    border-radius: 10px; 
+    margin: auto;
+}
+.carousel-description {
+    color:white;
+}
+.carousel-caption {
+    text-align: center;
+    opacity: 0; /* Set initial opacity to 0 */
+    color: #fff; /* Set the text color to white or your desired color */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Place the caption above the dark overlay */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+}
+
+.carousel-item {
+    position: relative;
+    border-radius: 10px; /* Adjust the border-radius as needed */
+    overflow: hidden;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Initial background is transparent */
+    z-index: 1;
+    transition: background 0.5s ease; /* Smooth transition for the background */
+}
+
+.carousel-item:hover .carousel-caption {
+    opacity: 1; /* Make the caption visible on hover */
+}
+
+.carousel-item:hover::before {
+    background: rgba(0, 0, 0, 0.8); /* Darken the background on hover */
+}
